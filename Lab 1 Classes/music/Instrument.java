@@ -9,6 +9,6 @@ package music;
  *
  * @author sharma_au
  */
-public abstract class Instrument {
-    public abstract void play(Note n);
+public interface Instrument {
+    void play(Note n);
 }

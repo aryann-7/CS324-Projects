@@ -11,13 +11,16 @@ package music;
  */
 public class Music {
     public static void tune(Instrument i) {
-        // ...
-		//play note MIDDLE_C
-		//play note C_SHARP
+        i.play(Note.MIDDLE_C);
+        i.play(Note.C_SHARP);
     }
+    
     public static void main(String[] args){
-		//create objects of Flute and Guitar
-		//call tune method
+        Flute flute = new Flute();
+        Guitar guitar = new Guitar();
+        
+        tune(flute);
+        tune(guitar);
     
         System.out.println("End of program.");
   }
