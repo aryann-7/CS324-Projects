@@ -9,10 +9,10 @@ package music;
  *
  * @author sharma_au
  */
-public class Flute extends Instrument{
+public class Flute implements Instrument{
     @Override
     public void play(Note n) {
-        System.out.println("Flute is playing " + n);
+        System.out.println("Flute is playing note " + n);
     }
 }
 
