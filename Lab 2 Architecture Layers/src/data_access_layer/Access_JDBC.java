@@ -2,43 +2,34 @@ package data_access_layer;
 
 import java.sql.*;
 
-
 public class Access_JDBC {
-    private String username;
-    private String password;
-    private String connectionString;
-    private String url;
-    private Connection con;
+	private String username;
+	private String password;
+	private String connectionString;
+	private String url;
+	private Connection con;
 
-    public void connect() {
-    	try {
-          
-            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");           
+	public void connect() {
+		try {
+			Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
+			con = DriverManager.getConnection("jdbc:ucanaccess://database//new_test.accdb");
+		} catch (Exception e) {
+			System.err.println("Error: " + e);
+		}
+	}
 
-
-            // con=DriverManager.getConnection("jdbc:ucanaccess://test.mdb");
-             con=DriverManager.getConnection("jdbc:ucanaccess://database//new_test.accdb");
-           // con = DriverManager.getConnection( connectionString ,username,password);
-          
-        }
-        catch (Exception e) {
-            System.err.println("Error: " + e);
-        }
-    }
-
-    public void disconnect(){
-    	try{
-			//	closes the connection (optional)
+	public void disconnect() {
+		try {
+			// closes the connection (optional)
 			con.close();
-    	}
-        catch (Exception e) {
-            System.err.println("Error: " + e);
-        }
-    }
+		} catch (Exception e) {
+			System.err.println("Error: " + e);
+		}
+	}
 
-    public Connection getConnect(){
-    	return this.con;
-    }
+	public Connection getConnect() {
+		return this.con;
+	}
 
 	public String getConnectionString() {
 		return connectionString;
@@ -72,4 +63,3 @@ public class Access_JDBC {
 		this.username = username;
 	}
 }
-
