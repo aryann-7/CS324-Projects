@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run Application_main",
+      "request": "launch",
+      "mainClass": "presentation_layer.Application_main",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
