@@ -1,0 +1,15 @@
+{
+  "java.project.sourcePaths": [
+    "Lab 1 Classes/music/src",
+    "Lab 2 Architecture Layers/src/main/java",
+    "Lab 3 Observer Design Patterns/src",
+    "Lab 6/Banking/src",
+    "Lab 6/Deadlock/src",
+    "Lab 6/Gallery/src"
+  ],
+  "java.project.outputPath": "bin",
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "Lab 2 Architecture Layers/lib/**/*.jar"
+  ]
+}

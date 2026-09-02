@@ -1,0 +1,44 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Lab 6: Run Banking",
+      "request": "launch",
+      "mainClass": "banking.Banking",
+      "projectName": "Banking",
+      "cwd": "${workspaceFolder}/Lab 6/Banking"
+    },
+    {
+      "type": "java",
+      "name": "Lab 6: Run Deadlock",
+      "request": "launch",
+      "mainClass": "myapplication.Main",
+      "projectName": "Deadlock",
+      "cwd": "${workspaceFolder}/Lab 6/Deadlock"
+    },
+    {
+      "type": "java",
+      "name": "Lab 6: Run Gallery",
+      "request": "launch",
+      "mainClass": "gallery.Gallery",
+      "projectName": "Gallery",
+      "cwd": "${workspaceFolder}/Lab 6/Gallery"
+    },
+    {
+      "type": "java",
+      "name": "Lab 3: Launch Lab3",
+      "request": "launch",
+      "mainClass": "Lab3",
+      "projectName": "Lab3VSCode",
+      "cwd": "${workspaceFolder}/Lab 3 Observer Design Patterns"
+    },
+    {
+      "type": "java",
+      "name": "Lab 2: Run Application_main",
+      "request": "launch",
+      "mainClass": "presentation_layer.Application_main",
+      "cwd": "${workspaceFolder}/Lab 2 Architecture Layers"
+    }
+  ]
+}

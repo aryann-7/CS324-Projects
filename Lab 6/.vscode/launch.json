@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run Banking",
+      "request": "launch",
+      "mainClass": "banking.Banking",
+      "projectName": "Banking",
+      "cwd": "${workspaceFolder}/Banking"
+    },
+    {
+      "type": "java",
+      "name": "Run Deadlock",
+      "request": "launch",
+      "mainClass": "myapplication.Main",
+      "projectName": "Deadlock",
+      "cwd": "${workspaceFolder}/Deadlock"
+    },
+    {
+      "type": "java",
+      "name": "Run Gallery",
+      "request": "launch",
+      "mainClass": "gallery.Gallery",
+      "projectName": "Gallery",
+      "cwd": "${workspaceFolder}/Gallery"
+    }
+  ]
+}
