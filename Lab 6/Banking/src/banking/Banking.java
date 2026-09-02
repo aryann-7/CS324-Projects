@@ -32,10 +32,12 @@ public class Banking {
               
         checkInterest.start();
         saveInterest.start(); 
+        checkInterest.join();
+        saveInterest.join();
+        
         transfer.start();
+        transfer.join();
               
-              
-        Thread.sleep(520);
         System.out.println("\nEnd of month");
         System.out.println(savings.accountType + ":\t"+ savings.balance);
         System.out.println(checking.accountType + ":\t"+ checking.balance);
