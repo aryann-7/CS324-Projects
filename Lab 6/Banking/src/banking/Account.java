@@ -19,15 +19,19 @@ public class Account {
         this.balance=credit;
     }
     
-    public void deposit(double credit) {
+    public synchronized double getBalance() {
+        return balance;
+    }
+    
+    public synchronized void deposit(double credit) {
         balance += credit;
     }
     
-    public void withdraw(double credit) {
+    public synchronized void withdraw(double credit) {
         balance -= credit;
     }
     
-    public void addinterest(double rate) {
+    public synchronized void addinterest(double rate) {
         balance *= (100+rate)/100.0;
     }
     
